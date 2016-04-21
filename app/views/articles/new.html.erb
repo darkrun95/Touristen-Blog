@@ -8,6 +8,17 @@
 <div id="container">
 	<h2 style="font-family: sans-serif;">Create an Article</h2>
 
+	<% if @article.errors.any? %>
+		<h4 style="font-family: sans-serif;">The following errors prevented the article from being created</h4>
+		<ul>
+		<% @article.errors.full_messages.each do |msg| %>
+			<li>
+				<%= msg %>
+			</li>
+		<% end %>
+		</ul>
+	<% end %>
+
 	<%= form_for @article do |i| %>
 		<p>
 			<%= i.label :title %><br/>
