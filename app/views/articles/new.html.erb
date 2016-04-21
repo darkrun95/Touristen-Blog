@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+<div id="container">
+	<h2 style="font-family: sans-serif;">Create an Article</h2>
+
+	<%= form_for @article do |i| %>
+		<p>
+			<%= i.label :title %><br/>
+			<%= i.text_field :title %>
+		</p>
+
+		<p>
+			<%= i.label :description %><br/>
+			<%= i.text_area :description %>
+		</p>
+
+		<p>
+			<%= i.submit %>
+		</p>
+	<% end %>
+</div>
+</body>
+</html>
