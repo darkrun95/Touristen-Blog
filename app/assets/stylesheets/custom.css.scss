@@ -23,3 +23,10 @@ $navbar-default-bg: black;
 #header::first-letter{
 	font-size: 130%;
 }
+
+.jumbotron{
+	background-image: asset-url('touristen-cover.jpg');
+	background-size: cover;
+	width: 100%;
+    height: auto;
+}
