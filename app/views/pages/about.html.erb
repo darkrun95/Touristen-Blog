@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Application - Home</title>
+
+	<style type="text/css">
+	body{
+		font-size: 16px;
+		font-family: sans-serif;
+		background: lightblue;
+	}
+
+	#container{
+		margin: 0px auto;
+		width: 640px;
+	}
+
+	#header{
+		margin: 5px;
+		background: lime;
+		padding: 5px;
+		box-sizing: border-box;
+		border: 1px solid blue;
+		box-shadow: 5px 5px 5px;
+		border-radius: 20px;
+	}
+
+	#main-article{
+		margin: 40px;
+		padding: 20px;
+		box-sizing: border-box;
+		text-align: justify;
+	}
+
+	#footer{
+		position: absolute;
+	}
+
+	.center-align{
+		text-align: center;
+	}
+
+	hr{
+		color: black;
+		opacity: 0.25;
+	}
+
+	#nav{
+		position: relative;
+		margin:5px;
+		padding: 5px;
+		font-weight: bold;
+		box-sizing: border-box;
+		box-shadow: 2px 1px 5px;
+		background: white;
+		border: none;
+		border-radius: 10px;
+		display: inline-block;
+		width: 20%;
+	}
+
+	#nav:active{
+		top: 1px;
+	}
+	</style>
+</head>
+
+<body>
+<div id="container">
+	<header id="header">
+		<h2 class="center-align">About Us</h2>
+	</header>
+
+	<article id="main-article">
+
+	<%= link_to 'Home', root_path %> | <%= link_to "Touristen", articles_path %>
+
+	</article>
+
+</div>
+<hr/>
+
+<footer id="footer">
+	<p>
+	<small>
+		All rights reserved &copy;Arun Pottekat
+	</small>
+	</p>
+</footer>
+</body>
+</html>
