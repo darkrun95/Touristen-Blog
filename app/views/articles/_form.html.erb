@@ -1,22 +1,13 @@
-<% if @article.errors.any? %>
-	<h4 style="font-family: sans-serif;">The following errors prevented the article from being created</h4>
-	<ul>
-	<% @article.errors.full_messages.each do |msg| %>
-		<li>
-			<%= msg %>
-		</li>
-	<% end %>
-	</ul>
-<% end %>
+<%= render "shared/error", obj: @article%>
 
 <div class="row">
-	<div class="col-xs-11">
+	<div class="col-xs-12">
 		<%= form_for(@article, :html => {class: "form-horizontal", role: "form"}) do |i| %>
 			<div class="form-group">
 				<div class="control-label col-sm-2">
 					<%= i.label :title %>
 				</div>
-				<div class="col-sm-10">
+				<div class="col-sm-8">
 					<%= i.text_field :title, class: "form-control", placeholder: "Title of Article", autofocus: true %>
 				</div>
 			</div>
@@ -25,7 +16,7 @@
 				<div class="control-label col-sm-2">
 					<%= i.label :description %>
 				</div>
-				<div class="col-sm-10">
+				<div class="col-sm-8">
 					<%= i.text_area :description, class: "form-control", placeholder: "Body of Article", rows: 10%>
 				</div>
 			</div>
@@ -37,7 +28,7 @@
 			</div>
 		<% end %>
 
-		<div class="col-xs-4 col-xs-offset-5">
+		<div class="col-xs-4 col-xs-offset-4">
 			[ <%= link_to "Cancel Request and return to Article Listing", articles_path %> ]
 		</div>
 	</div>
