@@ -25,8 +25,47 @@ $navbar-default-bg: black;
 }
 
 .jumbotron{
+	margin-top:5%;
 	background-image: asset-url('touristen-cover.jpg');
 	background-size: cover;
 	width: 100%;
     height: auto;
+}
+
+.jumbotron h1{
+	color: #000;
+	text-align: center;
+	margin-bottom: 30px;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+
+.btn-xlarge{
+	font-size: 170%;
+	background: #000;
+}
+
+.footer{
+	margin-top: 45px;
+	padding-top: 5px;
+	border-top: 1px solid #eaeaea;
+	color: #777;
+}
+
+.footer:hover{
+	color: #222;
+}
+
+.footer small{
+	float:left
+}
+
+.footer nav ul{
+	float: right;
+	list-style: none;
+}
+
+.footer nav ul li{
+	float: left;
+	margin-left: 15px;
 }
