@@ -21,7 +21,7 @@ $navbar-default-bg: black;
 }
 
 #header::first-letter{
-	font-size: 130%;
+	font-size: 120%;
 }
 
 .jumbotron{
@@ -41,8 +41,13 @@ $navbar-default-bg: black;
 }
 
 .btn-xlarge{
+	positon: absolute;
 	font-size: 170%;
 	background: #000;
+}
+
+.btn-xlarge:active{
+	top: 1px;
 }
 
 .footer{
