@@ -52,10 +52,10 @@ $navbar-default-bg: black;
 }
 
 .footer{
-	margin-top: 45px;
-	padding-top: 5px;
-	border-top: 1px solid #eaeaea;
+	position:absolute;
+	bottom:0;
 	color: #777;
+	padding: 1%;
 }
 
 .footer:hover{
@@ -64,16 +64,6 @@ $navbar-default-bg: black;
 
 .footer small{
 	float:left
-}
-
-.footer nav ul{
-	float: right;
-	list-style: none;
-}
-
-.footer nav ul li{
-	float: left;
-	margin-left: 15px;
 }
 
 .article-actions{
