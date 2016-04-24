@@ -52,10 +52,13 @@ $navbar-default-bg: black;
 }
 
 .footer{
-	position:absolute;
-	bottom:0;
-	color: #777;
-	padding: 1%;
+	background-color: #fff;
+	position: fixed;
+	bottom: 0px;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 40px;
 }
 
 .footer:hover{
