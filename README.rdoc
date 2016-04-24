@@ -1,1 +1,14 @@
-This is the repository for the Touristen Blog, built completely using Ruby on Rails Framework.
+Code Repository for Touristen.
+
+Touristen :- 
+	Blogging website for fun-loving travellers who are willing to share their experiences, thus revealing new and better places for others to visit.
+
+Feautures :-
+	1. Account based system.
+	2. Free to use.
+	3. View other user's articles.
+
+Built using Ruby on Rails framework.
+
+Release Chronological Order:-
+v1.0 :- 24th April, 2016
