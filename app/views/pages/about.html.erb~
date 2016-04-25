@@ -1,2 +1,0 @@
-<h2 align="center">About Us</h2>
-<%= link_to 'Home', root_path %>
